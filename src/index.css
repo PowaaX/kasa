@@ -5,16 +5,6 @@
   --grey: hsl(0, 0%, 98%);
   --black: hsl(0, 0%, 0%);
   --filter: hsla(0, 0%, 0%, 0.5);
-
-  --margin-tn: 20px;
-  --margin-sm: 30px;
-  --margin-md: 50px;
-  --margin-lg: 60px;
-  --margin-wd: 100px;
-
-  --radius-sm: 5px;
-  --radius-md: 10px;
-  --radius-lg: 20px;
 }
 
 body {

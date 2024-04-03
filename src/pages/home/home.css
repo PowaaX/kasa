@@ -1,5 +1,5 @@
 [id="home"] {
-  margin: var(--margin-tn);
+  margin: 20px;
 
   ul {
     display: flex;
@@ -12,11 +12,11 @@
   }
 
   @media (min-width: 768px) {
-    margin: var(--margin-sm) var(--margin-lg);
+    margin: 30px 60px;
 
     ul {
       justify-content: center;
-      border-radius: var(--radius-lg);
+      border-radius: 20px;
       padding: 50px;
       background-color: var(--grey);
     }
@@ -27,7 +27,7 @@
   }
 
   @media (min-width: 1200px) {
-    margin: var(--margin-md) var(--margin-wd);
+    margin: 50px 100px;
 
     li {
       width: calc((100% - 60px) / 3);

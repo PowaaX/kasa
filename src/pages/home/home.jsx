@@ -2,16 +2,14 @@ import { Link } from "react-router-dom";
 
 import img from "../../assets/home.webp";
 
+import data from "../../assets/data.json";
+
 import Banner from "../../components/banner/banner";
+
+import Card from "../../components/card/card";
 
 import "./home.css";
 
-/**
- * ? HOME
- * * Renders the Home component with a banner & a list of housing cards.
- *
- * @return {JSX.Element} The main section containing the banner & housing cards.
- */
 const Home = () => {
   return (
     <main id="home">
@@ -20,6 +18,20 @@ const Home = () => {
         alt="bannière Kasa"
         title="Chez vous, partout et ailleurs"
       />
+
+      <ul>
+        {data.housing.map(({ cover, title, id }) => (
+          <li key={id}>
+            <Link to={`/housing/${id}`}>
+              <Card
+                src={cover}
+                alt={`Présentation de ${title}`}
+                title={title}
+              />
+            </Link>
+          </li>
+        ))}
+      </ul>
     </main>
   );
 };
